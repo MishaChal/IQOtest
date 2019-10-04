@@ -62,17 +62,17 @@ $(function () {
                 <div class="col-4 calc">
                     <p><label for="date">Дата оформления вклада</label>
                 </div>
-                <div class="col-2"><input type="text" name="date" id="datepicker" style="width:88px; height: 23px;" placeholder="дд.мм.гггг"></p>
+                <div class="col-2"><input type="text" name="date" id="datepicker" style="width:88px; height: 23px;" placeholder="дд.мм.гггг">
                 </div>
-                <div class="col-6"></div>
+                <div class="col-6"></div></p>
                 <div class="col-4 calc">
                     <p><label for="Sum">Сумма вклада</label>
                 </div>
-                <div class="col-2"><input type="number" name="sum" id="Sum" min="1000" max="3000000" step="1000" style="width:88px; height: 23px;" oninput="inputSum()"></p>
+                <div class="col-2"><input type="number" name="sum" id="Sum" min="1000" max="3000000" step="1000" style="width:88px; height: 23px;" oninput="inputSum()">
                 </div>
                 <div class="col-6"><input id="range" type="range" min="1000" max="3000000" step="1000" value="0" style=width:238px;
                         oninput="inputRangeSum()"><br><div><div style="font-family: Arial; font-size:9px; font-style: oblique; margin-bottom:0; display: inline-block; padding-right:140px;">1 тыс. руб.</div> <div style="text-align:right;font-family: Arial; font-size:9px; font-style: oblique; margin-bottom:0; display: inline-block;">3 000 000</div></div></div>
-            
+                        </p>
                 <div class="col-4 calc">
                     <p><label>Срок вклада</label>
                 </div>
@@ -82,24 +82,24 @@ $(function () {
                         <option>3 года</option>
                         <option>4 года</option>
                         <option>5 лет</option>
-                    </select></p>
+                    </select>
                 </div>
-                <div class="col-6"></div>
+                <div class="col-6"></div></p>
                 <div class="col-4 calc">
                     <p><label for="PopolnenieVklada">Пополнение вклада</label>
                 </div>
                 <div class="col-2"><input type="radio" name="YesOrNo" value="Нет" checked>Нет <input type="radio"
-                        name="YesOrNo" value="Да">Да </p>
+                        name="YesOrNo" value="Да">Да 
                 </div>
-                <div class="col-6"></div>
+                <div class="col-6"></div></p>
                 <div class="col-4 calc">
                     <p><label for="SumPopVkl">Сумма пополнения вклада</label>
                 </div>
-                <div class="col-2"><input type="number" name="spv" id="SumPopVkl" min="1000" max="3000000" step="500" style="width:88px; height: 23px;" oninput="inputSpv()"></p>
+                <div class="col-2"><input type="number" name="spv" id="SumPopVkl" min="1000" max="3000000" step="500" style="width:88px; height: 23px;" oninput="inputSpv()">
                 </div>
                 <div class="col-6"><input id="rangeSpv" type="range" min="1000" max="3000000" step="500" value="0" style=width:238px;
                         oninput="inputRangeSpv()"><br><div><div style="font-family: Arial; font-size:9px; font-style: oblique; margin-bottom:0; display: inline-block; padding-right:140px;">1 тыс. руб.</div> <div style="text-align:right;font-family: Arial; font-size:9px; font-style: oblique; margin-bottom:0; display: inline-block;">3 000 000</div></div></div>
-            
+                        </p>
             <div class="col-3"><input id="btn" type="button" value="Рассчитать" ></div><div class="col-9"><div id="result_form"></div></div></div>
         </form>
         <footer>

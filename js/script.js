@@ -1,21 +1,21 @@
 function inputRangeSum() {
-    range = document.getElementById("range").value;
-    sum = document.getElementById("Sum");
+    let range = document.getElementById("range").value;
+    let sum = document.getElementById("Sum");
     sum.value = range;
 }
 function inputSum() {
-    range = document.getElementById("range");
-    sum = document.getElementById("Sum").value;
+    let range = document.getElementById("range");
+    let sum = document.getElementById("Sum").value;
     range.value=sum;
 }
 function inputSpv() {
-    range = document.getElementById("rangeSpv");
-    sum = document.getElementById("SumPopVkl").value;
+    let range = document.getElementById("rangeSpv");
+    let sum = document.getElementById("SumPopVkl").value;
     range.value=sum;
 }
 function inputRangeSpv() {
-    range = document.getElementById("rangeSpv").value;
-    sum = document.getElementById("SumPopVkl");
+    let range = document.getElementById("rangeSpv").value;
+    let sum = document.getElementById("SumPopVkl");
     sum.value = range;
 }
 $( document ).ready(function() {

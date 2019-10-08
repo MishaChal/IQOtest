@@ -4,10 +4,8 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
     <script src="js/script.js"></script>
-    
   <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
@@ -16,7 +14,7 @@
 $(function () {
     $("#datepicker").datepicker({dateFormat: 'dd.mm.yy',changeMonth: true,
 		changeYear: true,
-		yearRange: "-2:+2"});
+		yearRange: "-2:+2"}); //скрипт для работы с datepicker обрабатывается сразу после его создания без вызова
 });
     </script>
 </head>
@@ -76,7 +74,7 @@ $(function () {
                 <div class="col-4 calc">
                     <p><label>Срок вклада</label>
                 </div>
-                <div class="col-2" ><select style="width:88px; height: 23px;">
+                <div class="col-2" ><select name="depositTerm" style="width:88px; height: 23px;">
                         <option>1 год</option>
                         <option>2 года</option>
                         <option>3 года</option>

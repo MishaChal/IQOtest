@@ -13,8 +13,7 @@ if ($_POST["YesOrNo"]=="Нет") {
         $count=intdiv($month-1+$x, 12);
         $number = cal_days_in_month(CAL_GREGORIAN, $currentMonth, $year+$count);
         $days = (($year+$count) % 4 == 0 && ($year+$count) % 100 != 0 || ($year+$count) % 400 == 0)?366:365;
-        $promezhutok = $_POST["sum"]* $number *(0.1/$days);
-        $result +=$promezhutok;
+        $result += $_POST["sum"]* $number *(0.1/$days);
     }
 } else {
     $promezhutok = $_POST["sum"];
